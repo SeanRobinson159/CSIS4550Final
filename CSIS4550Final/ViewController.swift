@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,32 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func showAlertController(message: String) {
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        presentViewController(alertController, animated: true, completion: nil)
+        }
 
+    @IBAction func authenticateWithTouchID(sender: AnyObject) {
+        let context = LAContext()
+        var error: NSError?
+        
+        if context.canEvaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, error: &error)
+        {
+            let reason = "Authenticate with Touch ID"
+            context.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
+                    {(success: Bool, error: NSError?) in
+                    if success {
+                        self.showAlertController("Touch ID Authentication Succeeded")
+                    }
+                    else {
+                        self.showAlertController("Touch  ID Authentication Failed")
+                    }
+                })
+        }
+        else  {
+            showAlertController("Touch ID not available")
+        }
+    }
 }
 
