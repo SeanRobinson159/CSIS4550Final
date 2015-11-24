@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         
         if context.canEvaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, error: &error)
         {
-            let reason = "Authenticate with Touch ID"
+            let reason = "Please authenticate to proceed."
             context.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
                     {(success: Bool, error: NSError?) in
                     if success {

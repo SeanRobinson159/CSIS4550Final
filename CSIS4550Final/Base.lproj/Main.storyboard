@@ -54,18 +54,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtl-40-ha6">
-                                <rect key="frame" x="270" y="177" width="61" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtl-40-ha6">
+                                <rect key="frame" x="387" y="216" width="49" height="30"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="58o-fB-sG8"/>
-                                    <constraint firstAttribute="width" constant="61" id="uJG-M2-fBs"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Login"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f30-dY-GLm">
-                                <rect key="frame" x="256" y="215" width="88" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f30-dY-GLm">
+                                <rect key="frame" x="165" y="216" width="70" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Sign Up"/>
@@ -73,15 +69,22 @@
                                     <segue destination="I8C-eX-9pn" kind="show" id="tiT-BU-QzJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZu-9Z-Gh7">
-                                <rect key="frame" x="256" y="285" width="88" height="30"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VgT-VD-CuO">
+                                <rect key="frame" x="387" y="177" width="51" height="31"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="0Sz-2T-P3K"/>
-                                    <constraint firstAttribute="width" constant="88" id="gAG-Z4-7Rq"/>
-                                </constraints>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enable Touch ID?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tJ-YV-boo">
+                                <rect key="frame" x="165" y="177" width="140" height="31"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Touch ID"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZu-9Z-Gh7">
+                                <rect key="frame" x="258" y="216" width="105" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Touch ID Test"/>
                                 <connections>
                                     <action selector="authenticateWithTouchID:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ArY-Xm-Bwk"/>
                                 </connections>
@@ -91,15 +94,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5Rc-96-agx" firstAttribute="top" secondItem="vIW-SX-cdV" secondAttribute="bottom" constant="8" id="3b1-AY-zxI"/>
-                            <constraint firstItem="Xtl-40-ha6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6tM-NL-ycy"/>
-                            <constraint firstItem="f30-dY-GLm" firstAttribute="top" secondItem="Xtl-40-ha6" secondAttribute="bottom" constant="8" id="77r-vm-j0M"/>
+                            <constraint firstItem="Xtl-40-ha6" firstAttribute="leading" secondItem="vZu-9Z-Gh7" secondAttribute="trailing" constant="24" id="5OV-Yu-kZ9"/>
+                            <constraint firstItem="Xtl-40-ha6" firstAttribute="trailing" secondItem="VgT-VD-CuO" secondAttribute="trailing" id="6ly-La-WQ6"/>
+                            <constraint firstItem="vZu-9Z-Gh7" firstAttribute="leading" secondItem="f30-dY-GLm" secondAttribute="trailing" constant="23" id="82I-jF-4GZ"/>
+                            <constraint firstItem="f30-dY-GLm" firstAttribute="top" secondItem="7tJ-YV-boo" secondAttribute="bottom" constant="8" id="CWY-Qc-sdZ"/>
+                            <constraint firstItem="VgT-VD-CuO" firstAttribute="top" secondItem="5Rc-96-agx" secondAttribute="bottom" constant="8" id="H9w-oj-YEg"/>
                             <constraint firstItem="vIW-SX-cdV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MVz-xh-5kQ"/>
-                            <constraint firstItem="Xtl-40-ha6" firstAttribute="top" secondItem="5Rc-96-agx" secondAttribute="bottom" constant="8" id="TAf-lY-k3i"/>
+                            <constraint firstItem="f30-dY-GLm" firstAttribute="leading" secondItem="7tJ-YV-boo" secondAttribute="leading" id="Qw7-6N-6a8"/>
+                            <constraint firstItem="Xtl-40-ha6" firstAttribute="top" secondItem="VgT-VD-CuO" secondAttribute="bottom" constant="8" id="T12-1M-ZIO"/>
+                            <constraint firstItem="7tJ-YV-boo" firstAttribute="top" secondItem="5Rc-96-agx" secondAttribute="bottom" constant="8" id="VoS-nP-pyP"/>
+                            <constraint firstItem="7tJ-YV-boo" firstAttribute="leading" secondItem="5Rc-96-agx" secondAttribute="leading" id="WqT-YV-GbZ"/>
+                            <constraint firstItem="VgT-VD-CuO" firstAttribute="trailing" secondItem="5Rc-96-agx" secondAttribute="trailing" id="epp-Ey-Zuc"/>
                             <constraint firstItem="vIW-SX-cdV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="hLp-Va-zh3"/>
                             <constraint firstItem="5Rc-96-agx" firstAttribute="trailing" secondItem="vIW-SX-cdV" secondAttribute="trailing" id="vVT-4e-ytY"/>
-                            <constraint firstItem="vZu-9Z-Gh7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="va2-KI-DDO"/>
                             <constraint firstItem="5Rc-96-agx" firstAttribute="leading" secondItem="vIW-SX-cdV" secondAttribute="leading" id="wCK-VK-nnd"/>
-                            <constraint firstItem="f30-dY-GLm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yBz-l9-XGX"/>
+                            <constraint firstItem="vZu-9Z-Gh7" firstAttribute="top" secondItem="7tJ-YV-boo" secondAttribute="bottom" constant="8" id="zDK-py-wYF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="1xU-xu-Lrn"/>
