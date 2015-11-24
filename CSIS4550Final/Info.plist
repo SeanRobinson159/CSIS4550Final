@@ -30,6 +30,19 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutIconType</key>
+			<string>Task</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Test TouchID</string>
+			<key>UIApplicaitonShortcutItemTitle</key>
+			<string>TouchID</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>edu.suu.CSIS4550Final.TouchID</string>
+		</dict>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

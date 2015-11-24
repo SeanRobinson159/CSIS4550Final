@@ -192,6 +192,7 @@
 				TargetAttributes = {
 					14068B4A1BFB84E8008D1095 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = RHJ224H6Z6;
 					};
 					14068B5E1BFB84E8008D1095 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -347,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -385,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -396,7 +397,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CSIS4550Final/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.suu.CSIS4550Final;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,7 +410,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CSIS4550Final/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.suu.CSIS4550Final;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,6 +486,7 @@
 				14068B751BFB84E8008D1095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14068B761BFB84E8008D1095 /* Build configuration list for PBXNativeTarget "CSIS4550FinalTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +495,7 @@
 				14068B781BFB84E8008D1095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14068B791BFB84E8008D1095 /* Build configuration list for PBXNativeTarget "CSIS4550FinalUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +504,7 @@
 				14068B7B1BFB84E8008D1095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
