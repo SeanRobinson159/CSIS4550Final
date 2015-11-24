@@ -14,6 +14,7 @@
 		14068B591BFB84E8008D1095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14068B571BFB84E8008D1095 /* LaunchScreen.storyboard */; };
 		14068B641BFB84E8008D1095 /* CSIS4550FinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14068B631BFB84E8008D1095 /* CSIS4550FinalTests.swift */; };
 		14068B6F1BFB84E8008D1095 /* CSIS4550FinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14068B6E1BFB84E8008D1095 /* CSIS4550FinalUITests.swift */; };
+		14114F281C0414E200E164F9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14068B5A1BFB84E8008D1095 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14114F281C0414E200E164F9 /* Info.plist in Resources */,
 				14068B591BFB84E8008D1095 /* LaunchScreen.storyboard in Resources */,
 				14068B561BFB84E8008D1095 /* Assets.xcassets in Resources */,
 				14068B541BFB84E8008D1095 /* Main.storyboard in Resources */,
