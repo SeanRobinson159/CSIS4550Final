@@ -33,9 +33,10 @@
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
+			<key>UIApplicationShortcutIconType</key>
+			<string>UIApplicationShortcutIconTypeAdd</string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>TouchID</string>
-            
+			<string>Touch ID Test</string>
 			<key>UIApplicationShortcutItemType</key>
 			<string>edu.suu.CSIS4550Final.TouchID</string>
 		</dict>
