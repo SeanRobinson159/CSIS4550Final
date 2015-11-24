@@ -33,9 +33,6 @@
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
-			<key>UIApplicationShortcutIconType</key>
-			<string>Add</string>
-            
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>TouchID</string>
             

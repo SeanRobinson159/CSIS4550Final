@@ -15,6 +15,7 @@
 		14068B641BFB84E8008D1095 /* CSIS4550FinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14068B631BFB84E8008D1095 /* CSIS4550FinalTests.swift */; };
 		14068B6F1BFB84E8008D1095 /* CSIS4550FinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14068B6E1BFB84E8008D1095 /* CSIS4550FinalUITests.swift */; };
 		14114F281C0414E200E164F9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14068B5A1BFB84E8008D1095 /* Info.plist */; };
+		600393BFB1572A3B2BC3DAC8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C508E2B17AC31214A3DB5CA5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,10 @@
 		14068B6A1BFB84E8008D1095 /* CSIS4550FinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSIS4550FinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14068B6E1BFB84E8008D1095 /* CSIS4550FinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSIS4550FinalUITests.swift; sourceTree = "<group>"; };
 		14068B701BFB84E8008D1095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143D81951C041BB800AA7978 /* CSIS4550Final-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSIS4550Final-Bridging-Header.h"; sourceTree = "<group>"; };
+		7D2061ED8A67B259C8042666 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		ADFA097685DEF9C989919670 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C508E2B17AC31214A3DB5CA5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600393BFB1572A3B2BC3DAC8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +84,13 @@
 		14068B421BFB84E8008D1095 = {
 			isa = PBXGroup;
 			children = (
+				143D81951C041BB800AA7978 /* CSIS4550Final-Bridging-Header.h */,
 				14068B4D1BFB84E8008D1095 /* CSIS4550Final */,
 				14068B621BFB84E8008D1095 /* CSIS4550FinalTests */,
 				14068B6D1BFB84E8008D1095 /* CSIS4550FinalUITests */,
 				14068B4C1BFB84E8008D1095 /* Products */,
+				2C47D245D58A8715E88AB977 /* Pods */,
+				757CB3A0032275720E075AF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +135,23 @@
 			path = CSIS4550FinalUITests;
 			sourceTree = "<group>";
 		};
+		2C47D245D58A8715E88AB977 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D2061ED8A67B259C8042666 /* Pods.debug.xcconfig */,
+				ADFA097685DEF9C989919670 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		757CB3A0032275720E075AF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C508E2B17AC31214A3DB5CA5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14068B731BFB84E8008D1095 /* Build configuration list for PBXNativeTarget "CSIS4550Final" */;
 			buildPhases = (
+				5EDF575EE9ACE0FC8D7BA6FE /* Check Pods Manifest.lock */,
 				14068B471BFB84E8008D1095 /* Sources */,
 				14068B481BFB84E8008D1095 /* Frameworks */,
 				14068B491BFB84E8008D1095 /* Resources */,
+				59D809B94D46E494299953B8 /* Embed Pods Frameworks */,
+				301EC4643851E4BAADD3D57A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,6 +217,7 @@
 		14068B431BFB84E8008D1095 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Sean Robinson";
 				TargetAttributes = {
@@ -252,6 +282,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		301EC4643851E4BAADD3D57A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59D809B94D46E494299953B8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EDF575EE9ACE0FC8D7BA6FE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14068B471BFB84E8008D1095 /* Sources */ = {
@@ -334,6 +412,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -378,6 +457,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -397,27 +477,36 @@
 		};
 		14068B741BFB84E8008D1095 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D2061ED8A67B259C8042666 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CSIS4550Final/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.suu.CSIS4550Final;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CSIS4550Final-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		14068B751BFB84E8008D1095 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADFA097685DEF9C989919670 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CSIS4550Final/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.suu.CSIS4550Final;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CSIS4550Final-Bridging-Header.h";
 			};
 			name = Release;
 		};
