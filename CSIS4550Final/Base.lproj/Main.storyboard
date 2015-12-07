@@ -76,14 +76,15 @@
                                         <state key="normal" title="Touch ID Test"/>
                                         <connections>
                                             <action selector="authenticateWithTouchID:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ArY-Xm-Bwk"/>
+                                            <segue destination="Gjk-dS-oRh" kind="show" id="tOl-6h-1ff"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f30-dY-GLm">
                                         <rect key="frame" x="14" y="136" width="70" height="30"/>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="70" id="dDz-pE-MfK"/>
-                                            <constraint firstAttribute="height" constant="30" id="gud-f5-RsU"/>
+                                            <constraint firstAttribute="height" constant="30" id="QS3-BZ-Ith"/>
+                                            <constraint firstAttribute="width" constant="70" id="hhz-rv-DOa"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Sign Up"/>
@@ -95,32 +96,32 @@
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="f30-dY-GLm" secondAttribute="bottom" constant="4" id="33i-1a-xOq"/>
-                                    <constraint firstItem="vIW-SX-cdV" firstAttribute="leading" secondItem="uga-0I-vYv" secondAttribute="leading" constant="14" id="6R7-oH-1Ru"/>
-                                    <constraint firstItem="7tJ-YV-boo" firstAttribute="leading" secondItem="f30-dY-GLm" secondAttribute="leading" id="8cU-fz-Nfs"/>
-                                    <constraint firstItem="VgT-VD-CuO" firstAttribute="top" secondItem="7tJ-YV-boo" secondAttribute="top" id="ASL-wF-WoP"/>
-                                    <constraint firstItem="VgT-VD-CuO" firstAttribute="leading" secondItem="Xtl-40-ha6" secondAttribute="leading" id="CPe-w4-BHY"/>
-                                    <constraint firstItem="VgT-VD-CuO" firstAttribute="trailing" secondItem="Xtl-40-ha6" secondAttribute="trailing" id="DMi-AM-OVu"/>
-                                    <constraint firstItem="vIW-SX-cdV" firstAttribute="top" secondItem="uga-0I-vYv" secondAttribute="top" constant="15" id="FcZ-32-5hv"/>
-                                    <constraint firstItem="vZu-9Z-Gh7" firstAttribute="baseline" secondItem="Xtl-40-ha6" secondAttribute="baseline" id="K3L-2o-zE9"/>
-                                    <constraint firstItem="Xtl-40-ha6" firstAttribute="baseline" secondItem="vZu-9Z-Gh7" secondAttribute="firstBaseline" id="MgX-eN-yL8"/>
-                                    <constraint firstItem="VgT-VD-CuO" firstAttribute="trailing" secondItem="5Rc-96-agx" secondAttribute="trailing" id="Qoz-Xt-YdN"/>
-                                    <constraint firstItem="vZu-9Z-Gh7" firstAttribute="baseline" secondItem="f30-dY-GLm" secondAttribute="baseline" id="Re7-Vf-3iJ"/>
-                                    <constraint firstItem="vIW-SX-cdV" firstAttribute="centerX" secondItem="uga-0I-vYv" secondAttribute="centerX" id="RvM-s4-eGH"/>
-                                    <constraint firstItem="Xtl-40-ha6" firstAttribute="leading" secondItem="vZu-9Z-Gh7" secondAttribute="trailing" constant="26" id="VtL-2P-9kr"/>
-                                    <constraint firstItem="5Rc-96-agx" firstAttribute="leading" secondItem="vIW-SX-cdV" secondAttribute="leading" id="bUU-4h-wq4"/>
-                                    <constraint firstItem="7tJ-YV-boo" firstAttribute="top" secondItem="5Rc-96-agx" secondAttribute="bottom" constant="14" id="cIT-dN-cOP"/>
-                                    <constraint firstItem="7tJ-YV-boo" firstAttribute="bottom" secondItem="VgT-VD-CuO" secondAttribute="bottom" id="gfd-wd-SlT"/>
-                                    <constraint firstItem="VgT-VD-CuO" firstAttribute="leading" secondItem="7tJ-YV-boo" secondAttribute="trailing" constant="82" id="ibQ-YV-Pwo"/>
-                                    <constraint firstItem="f30-dY-GLm" firstAttribute="top" secondItem="7tJ-YV-boo" secondAttribute="bottom" constant="5" id="jL1-GY-kmU"/>
-                                    <constraint firstItem="vZu-9Z-Gh7" firstAttribute="baseline" secondItem="f30-dY-GLm" secondAttribute="firstBaseline" id="k2A-g5-9xp"/>
-                                    <constraint firstItem="7tJ-YV-boo" firstAttribute="leading" secondItem="5Rc-96-agx" secondAttribute="leading" id="nM3-yW-6lo"/>
-                                    <constraint firstItem="vZu-9Z-Gh7" firstAttribute="baseline" secondItem="Xtl-40-ha6" secondAttribute="firstBaseline" id="pj2-7C-MvJ"/>
-                                    <constraint firstItem="5Rc-96-agx" firstAttribute="top" secondItem="vIW-SX-cdV" secondAttribute="bottom" constant="11" id="raO-Mq-2x7"/>
-                                    <constraint firstItem="f30-dY-GLm" firstAttribute="top" secondItem="vZu-9Z-Gh7" secondAttribute="top" id="tVj-sO-deb"/>
-                                    <constraint firstItem="5Rc-96-agx" firstAttribute="trailing" secondItem="vIW-SX-cdV" secondAttribute="trailing" id="u6S-eh-36G"/>
-                                    <constraint firstItem="vZu-9Z-Gh7" firstAttribute="leading" secondItem="f30-dY-GLm" secondAttribute="trailing" constant="21" id="yW5-px-aBh"/>
-                                    <constraint firstItem="Xtl-40-ha6" firstAttribute="top" secondItem="vZu-9Z-Gh7" secondAttribute="top" id="zRa-h0-erw"/>
+                                    <constraint firstItem="vIW-SX-cdV" firstAttribute="leading" secondItem="uga-0I-vYv" secondAttribute="leading" constant="14" id="1Ul-h8-vKW"/>
+                                    <constraint firstItem="vIW-SX-cdV" firstAttribute="centerX" secondItem="uga-0I-vYv" secondAttribute="centerX" id="2NY-NO-rcX"/>
+                                    <constraint firstItem="vIW-SX-cdV" firstAttribute="leading" secondItem="5Rc-96-agx" secondAttribute="leading" id="2OP-z2-Arg"/>
+                                    <constraint firstItem="vZu-9Z-Gh7" firstAttribute="leading" secondItem="f30-dY-GLm" secondAttribute="trailing" constant="21" id="49L-mz-zHf"/>
+                                    <constraint firstItem="vZu-9Z-Gh7" firstAttribute="baseline" secondItem="Xtl-40-ha6" secondAttribute="firstBaseline" id="7hT-hK-aDJ"/>
+                                    <constraint firstItem="VgT-VD-CuO" firstAttribute="leading" secondItem="7tJ-YV-boo" secondAttribute="trailing" constant="82" id="BPm-2Y-59s"/>
+                                    <constraint firstItem="7tJ-YV-boo" firstAttribute="bottom" secondItem="VgT-VD-CuO" secondAttribute="bottom" id="CiL-AN-94d"/>
+                                    <constraint firstItem="vIW-SX-cdV" firstAttribute="trailing" secondItem="5Rc-96-agx" secondAttribute="trailing" id="EaP-Fg-D2K"/>
+                                    <constraint firstItem="Xtl-40-ha6" firstAttribute="leading" secondItem="VgT-VD-CuO" secondAttribute="leading" id="Fji-p2-4bS"/>
+                                    <constraint firstItem="5Rc-96-agx" firstAttribute="trailing" secondItem="VgT-VD-CuO" secondAttribute="trailing" id="GCV-aM-Bp0"/>
+                                    <constraint firstItem="vIW-SX-cdV" firstAttribute="top" secondItem="uga-0I-vYv" secondAttribute="top" constant="15" id="HD8-t0-mLx"/>
+                                    <constraint firstItem="VgT-VD-CuO" firstAttribute="top" secondItem="7tJ-YV-boo" secondAttribute="top" id="HO2-jl-Zbw"/>
+                                    <constraint firstItem="Xtl-40-ha6" firstAttribute="baseline" secondItem="vZu-9Z-Gh7" secondAttribute="baseline" id="Kha-TC-lFP"/>
+                                    <constraint firstItem="vZu-9Z-Gh7" firstAttribute="baseline" secondItem="f30-dY-GLm" secondAttribute="firstBaseline" id="LiC-7m-3uM"/>
+                                    <constraint firstItem="Xtl-40-ha6" firstAttribute="baseline" secondItem="vZu-9Z-Gh7" secondAttribute="firstBaseline" id="O8M-K6-KND"/>
+                                    <constraint firstItem="5Rc-96-agx" firstAttribute="top" secondItem="vIW-SX-cdV" secondAttribute="bottom" constant="11" id="PlY-oQ-okr"/>
+                                    <constraint firstItem="7tJ-YV-boo" firstAttribute="top" secondItem="5Rc-96-agx" secondAttribute="bottom" constant="14" id="R1I-fa-ggi"/>
+                                    <constraint firstItem="vZu-9Z-Gh7" firstAttribute="top" secondItem="Xtl-40-ha6" secondAttribute="top" id="Ykn-DQ-fEY"/>
+                                    <constraint firstItem="Xtl-40-ha6" firstAttribute="trailing" secondItem="VgT-VD-CuO" secondAttribute="trailing" id="aC4-eX-bXg"/>
+                                    <constraint firstItem="Xtl-40-ha6" firstAttribute="leading" secondItem="vZu-9Z-Gh7" secondAttribute="trailing" constant="26" id="aHr-dX-mdC"/>
+                                    <constraint firstItem="f30-dY-GLm" firstAttribute="top" secondItem="vZu-9Z-Gh7" secondAttribute="top" id="cYi-E0-wsR"/>
+                                    <constraint firstItem="vZu-9Z-Gh7" firstAttribute="baseline" secondItem="f30-dY-GLm" secondAttribute="baseline" id="caP-Ot-yyF"/>
+                                    <constraint firstItem="7tJ-YV-boo" firstAttribute="leading" secondItem="f30-dY-GLm" secondAttribute="leading" id="jWq-Jj-HQA"/>
+                                    <constraint firstItem="5Rc-96-agx" firstAttribute="leading" secondItem="7tJ-YV-boo" secondAttribute="leading" id="p2r-9w-Lbs"/>
+                                    <constraint firstAttribute="bottom" secondItem="f30-dY-GLm" secondAttribute="bottom" constant="4" id="qoz-pn-rD2"/>
+                                    <constraint firstItem="f30-dY-GLm" firstAttribute="top" secondItem="7tJ-YV-boo" secondAttribute="bottom" constant="5" id="xPp-h1-qFL"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f8v-Lz-4JB">
@@ -131,19 +132,54 @@
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="0.47520884390000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="uga-0I-vYv" firstAttribute="centerX" secondItem="f8v-Lz-4JB" secondAttribute="centerX" id="B0U-va-OzF"/>
-                            <constraint firstItem="f8v-Lz-4JB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="KI7-gl-gWS"/>
-                            <constraint firstItem="uga-0I-vYv" firstAttribute="top" secondItem="f8v-Lz-4JB" secondAttribute="bottom" constant="17" id="PWC-lJ-0bK"/>
-                            <constraint firstItem="f8v-Lz-4JB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="qJt-5z-2DH"/>
-                            <constraint firstItem="uga-0I-vYv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wwO-hO-v56"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uga-0I-vYv" secondAttribute="bottom" constant="230" id="zZ0-sX-1kc"/>
+                            <constraint firstItem="uga-0I-vYv" firstAttribute="centerX" secondItem="f8v-Lz-4JB" secondAttribute="centerX" id="8OQ-uX-ItN"/>
+                            <constraint firstItem="uga-0I-vYv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PPa-Fz-Jcj"/>
+                            <constraint firstItem="f8v-Lz-4JB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="dpP-N9-FcK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uga-0I-vYv" secondAttribute="bottom" constant="230" id="gqB-7X-ktY"/>
+                            <constraint firstItem="f8v-Lz-4JB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="loD-9h-lBG"/>
+                            <constraint firstItem="uga-0I-vYv" firstAttribute="top" secondItem="f8v-Lz-4JB" secondAttribute="bottom" constant="17" id="yE0-A0-F2p"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="1xU-xu-Lrn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-359" y="251"/>
+            <point key="canvasLocation" x="-469" y="251"/>
+        </scene>
+        <!--Succesfully Logged in-->
+        <scene sceneID="pzk-wK-Y9z">
+            <objects>
+                <viewController title="Succesfully Logged in" id="Gjk-dS-oRh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="709-vb-MsQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="EVK-49-ohw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MfF-ta-p6Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgl-gG-7sE">
+                                <rect key="frame" x="0.0" y="64" width="600" height="621"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="You have succesfully logged in." borderStyle="roundedRect" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="6DW-Xl-jd9">
+                                        <rect key="frame" x="147" y="66" width="305" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47520884390000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Successfully Logged In" id="WRV-9z-dzG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ec4-Tc-4Os" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240" y="621"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="247-jk-kaY">
@@ -301,25 +337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Die-kI-yRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="382" y="251"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="bvE-iv-dBc">
-            <objects>
-                <viewController id="1pM-tE-zYf" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DO1-AJ-Qi7"/>
-                        <viewControllerLayoutGuide type="bottom" id="s8a-e9-bf2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GOU-TR-qbJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bhQ-J5-0T5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
+            <point key="canvasLocation" x="398" y="-97"/>
         </scene>
     </scenes>
 </document>
