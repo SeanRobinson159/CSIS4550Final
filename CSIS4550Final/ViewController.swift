@@ -46,12 +46,9 @@ class ViewController: UIViewController {
 		PFUser.logInWithUsernameInBackground(self.loginUsernameField.text!, password: self.loginPasswordField.text!, block: { (user, error) -> Void in
 			spinner.stopAnimating()
 			if(user != nil) {
-				self.showAlertController("Logged In")
+				//self.showAlertController("Logged In")
 				
-				dispatch_async(dispatch_get_main_queue(), { () -> Void in
-					let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Success")
-					self.presentViewController(viewController, animated: true, completion: nil)
-				})
+				self.navigateToView("Success")
 			} else {
 				self.showAlertController("\(error)")
 			}
@@ -82,12 +79,9 @@ class ViewController: UIViewController {
 				if((error) != nil) {
 					self.showAlertController("\(error)")
 				} else {
-					self.showAlertController("Signed Up")
+					//self.showAlertController("Signed Up")
 					//Now that it was a success we are going to switch views
-					dispatch_async(dispatch_get_main_queue(), { () -> Void in
-						let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login") 
-						self.presentViewController(viewController, animated: true, completion: nil)
-					})
+					self.navigateToView("Login")
 				}
 			})
 		}
@@ -109,7 +103,7 @@ class ViewController: UIViewController {
 			context.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
 				{(success: Bool, error: NSError?) in
 					if success {
-						self.navigateToAuthenticatedViewController()
+						self.navigateToView("Success")
 					}
 					else {
 						self.showAlertController("Touch ID Authentication Failed")
@@ -121,8 +115,8 @@ class ViewController: UIViewController {
 		}
 	}
 	
-	func navigateToAuthenticatedViewController() {
-		if let loggedInVC = storyboard?.instantiateViewControllerWithIdentifier("Success") {
+	func navigateToView(id: String) {
+		if let loggedInVC = storyboard?.instantiateViewControllerWithIdentifier(id) {
 			dispatch_async(dispatch_get_main_queue()) { () -> Void in
 				self.navigationController?.pushViewController(loggedInVC, animated: true)
 			}
