@@ -37,10 +37,10 @@ class ViewController: UIViewController {
             context.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
                     {(success: Bool, error: NSError?) in
                     if success {
-                        self.showAlertController("Touch ID Authentication Succeeded")
+                        self.navigateToAuthenticatedViewController()
                     }
                     else {
-                        self.showAlertController("Touch  ID Authentication Failed")
+                        self.showAlertController("Touch ID Authentication Failed")
                     }
                 })
         }
@@ -48,4 +48,17 @@ class ViewController: UIViewController {
             showAlertController("Touch ID not available")
         }
     }
+    
+    func navigateToAuthenticatedViewController() {
+        if let loggedInVC = storyboard?.instantiateViewControllerWithIdentifier("Success") {
+            dispatch_async(dispatch_get_main_queue()) { () -> Void in
+                self.navigationController?.pushViewController(loggedInVC, animated: true)
+            }
+        }
+    }
+    
+    /*func storeUserLogin(){
+        SignUp.toPass = textField.txt
+    }
+    */
 }
