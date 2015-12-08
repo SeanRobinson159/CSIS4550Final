@@ -152,6 +152,81 @@
             </objects>
             <point key="canvasLocation" x="-469" y="251"/>
         </scene>
+        <!--Password Reset-->
+        <scene sceneID="1Ch-0g-Kes">
+            <objects>
+                <viewController title="Password Reset" id="3bA-Ot-ueX" customClass="ViewController" customModule="CSIS4550Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tdm-fw-LWZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="kx4-P1-o81"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vie-pf-p8D">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QjP-24-hq9">
+                                <rect key="frame" x="150" y="215" width="300" height="170"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bkz-bX-2ZC">
+                                        <rect key="frame" x="14" y="15" width="271" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKj-xf-w4s">
+                                        <rect key="frame" x="89" y="85" width="122" height="33"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Reset Password"/>
+                                        <connections>
+                                            <action selector="authenticateWithTouchID:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HTx-C4-OhJ"/>
+                                            <action selector="passwordResetAction:" destination="3bA-Ot-ueX" eventType="touchUpInside" id="gZK-hL-gJb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bkz-bX-2ZC" firstAttribute="leading" secondItem="QjP-24-hq9" secondAttribute="leading" constant="14" id="0DD-Pd-yK5"/>
+                                    <constraint firstAttribute="bottom" secondItem="OKj-xf-w4s" secondAttribute="bottom" constant="52" id="20Z-jh-YmC"/>
+                                    <constraint firstItem="OKj-xf-w4s" firstAttribute="leading" secondItem="QjP-24-hq9" secondAttribute="leading" constant="89" id="8Q0-IH-NZD"/>
+                                    <constraint firstItem="bkz-bX-2ZC" firstAttribute="leading" secondItem="QjP-24-hq9" secondAttribute="leading" constant="14" id="95g-Uc-hwK"/>
+                                    <constraint firstItem="OKj-xf-w4s" firstAttribute="leading" secondItem="QjP-24-hq9" secondAttribute="leading" constant="89" id="9k7-gz-4Ue"/>
+                                    <constraint firstItem="bkz-bX-2ZC" firstAttribute="centerX" secondItem="QjP-24-hq9" secondAttribute="centerX" id="AgY-tU-JSv"/>
+                                    <constraint firstItem="bkz-bX-2ZC" firstAttribute="top" secondItem="QjP-24-hq9" secondAttribute="top" constant="15" id="EyG-pv-Van"/>
+                                    <constraint firstItem="bkz-bX-2ZC" firstAttribute="leading" secondItem="QjP-24-hq9" secondAttribute="leading" constant="14" id="FYY-Ym-7wk"/>
+                                    <constraint firstItem="bkz-bX-2ZC" firstAttribute="centerX" secondItem="QjP-24-hq9" secondAttribute="centerX" id="LFE-VT-FxU"/>
+                                    <constraint firstItem="OKj-xf-w4s" firstAttribute="centerX" secondItem="bkz-bX-2ZC" secondAttribute="centerX" id="RWa-jg-vVR"/>
+                                    <constraint firstItem="OKj-xf-w4s" firstAttribute="top" secondItem="bkz-bX-2ZC" secondAttribute="bottom" constant="40" id="Waw-0S-Lh0"/>
+                                    <constraint firstAttribute="trailing" secondItem="bkz-bX-2ZC" secondAttribute="trailing" constant="15" id="biT-au-nt7"/>
+                                    <constraint firstItem="bkz-bX-2ZC" firstAttribute="top" secondItem="QjP-24-hq9" secondAttribute="top" constant="15" id="g2b-gu-BiH"/>
+                                    <constraint firstAttribute="trailing" secondItem="OKj-xf-w4s" secondAttribute="trailing" constant="89" id="g8O-b8-X1a"/>
+                                    <constraint firstItem="bkz-bX-2ZC" firstAttribute="leading" secondItem="QjP-24-hq9" secondAttribute="leading" constant="14" id="h9a-7K-w4C"/>
+                                    <constraint firstItem="OKj-xf-w4s" firstAttribute="leading" secondItem="QjP-24-hq9" secondAttribute="leading" constant="89" id="ivA-jl-jLP"/>
+                                    <constraint firstItem="OKj-xf-w4s" firstAttribute="centerX" secondItem="QjP-24-hq9" secondAttribute="centerX" id="r6l-QE-3fS"/>
+                                    <constraint firstItem="bkz-bX-2ZC" firstAttribute="top" secondItem="QjP-24-hq9" secondAttribute="top" constant="15" id="rXM-Sz-aGr"/>
+                                    <constraint firstItem="bkz-bX-2ZC" firstAttribute="top" secondItem="QjP-24-hq9" secondAttribute="top" constant="15" id="tAr-m8-Zv1"/>
+                                    <constraint firstItem="OKj-xf-w4s" firstAttribute="top" secondItem="QjP-24-hq9" secondAttribute="top" constant="85" id="uZL-Vf-S2g"/>
+                                    <constraint firstAttribute="bottom" secondItem="OKj-xf-w4s" secondAttribute="bottom" constant="52" id="ugD-hL-boB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.47520884390000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QjP-24-hq9" firstAttribute="centerY" secondItem="vie-pf-p8D" secondAttribute="centerY" id="1e1-NU-wk2"/>
+                            <constraint firstItem="QjP-24-hq9" firstAttribute="centerX" secondItem="vie-pf-p8D" secondAttribute="centerX" id="nho-Nb-y9v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Password Reset" id="rwo-yG-ZrK"/>
+                    <connections>
+                        <outlet property="resetEmailField" destination="bkz-bX-2ZC" id="YcF-qK-w0Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0f-1C-Doj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-457" y="936"/>
+        </scene>
         <!--Succesfully Logged in-->
         <scene sceneID="pzk-wK-Y9z">
             <objects>
@@ -198,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ec4-Tc-4Os" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="240" y="621"/>
+            <point key="canvasLocation" x="398" y="603"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="247-jk-kaY">

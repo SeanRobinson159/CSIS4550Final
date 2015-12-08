@@ -19,6 +19,8 @@ class ViewController: UIViewController {
 	@IBOutlet weak var confirmPasswordField: UITextField!
 	@IBOutlet weak var emailField: UITextField!
 	@IBOutlet weak var phoneField: UITextField!
+	//Password Reset page fields
+	@IBOutlet weak var resetEmailField: UITextField!
 	
 	
 	override func viewDidLoad() {
@@ -86,6 +88,16 @@ class ViewController: UIViewController {
 			})
 		}
 	}
+	
+	@IBAction func passwordResetAction(sender: AnyObject){
+		let email = self.resetEmailField.text
+		let fixedEmail = email?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+		
+		PFUser.requestPasswordResetForEmail(fixedEmail!)
+		
+		self.showAlertController("An email containing information on how to reset your password has been sent to \(fixedEmail).")
+	}
+	
 	
 	func showAlertController(message: String) {
 		let alertController = UIAlertController(title: nil, message: message, preferredStyle: .Alert)
