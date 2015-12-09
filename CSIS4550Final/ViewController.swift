@@ -42,14 +42,8 @@ class ViewController: UIViewController {
 	}
 	
 	@IBAction func loginAction(sender: AnyObject){
-		let spinner: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
-		spinner.startAnimating()
-		
 		PFUser.logInWithUsernameInBackground(self.loginUsernameField.text!, password: self.loginPasswordField.text!, block: { (user, error) -> Void in
-			spinner.stopAnimating()
 			if(user != nil) {
-				//self.showAlertController("Logged In")
-				
 				self.navigateToView("Success")
 			} else {
 				self.showAlertController("\(error)")
@@ -62,10 +56,6 @@ class ViewController: UIViewController {
 		if(self.passwordField.text != self.confirmPasswordField.text){
 			self.showAlertController("Passwords do not match.")
 		} else{
-			//lets create a spinner to show the user it is loading
-			let spinner: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
-			spinner.startAnimating()
-			
 			//create a user object
 			let newUser = PFUser()
 			
@@ -77,12 +67,9 @@ class ViewController: UIViewController {
 			
 			//The actual connection to the database
 			newUser.signUpInBackgroundWithBlock({ (succeed, error) -> Void in
-			spinner.stopAnimating()
 				if((error) != nil) {
 					self.showAlertController("\(error)")
 				} else {
-					//self.showAlertController("Signed Up")
-					//Now that it was a success we are going to switch views
 					self.navigateToView("Login")
 				}
 			})
