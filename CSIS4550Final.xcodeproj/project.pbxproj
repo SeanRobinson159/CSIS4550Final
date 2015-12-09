@@ -48,7 +48,7 @@
 		14068B6A1BFB84E8008D1095 /* CSIS4550FinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSIS4550FinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14068B6E1BFB84E8008D1095 /* CSIS4550FinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSIS4550FinalUITests.swift; sourceTree = "<group>"; };
 		14068B701BFB84E8008D1095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		143D81951C041BB800AA7978 /* CSIS4550Final-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSIS4550Final-Bridging-Header.h"; sourceTree = "<group>"; };
+		143D81951C041BB800AA7978 /* CSIS4550Final-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSIS4550Final-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		7D2061ED8A67B259C8042666 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ADFA097685DEF9C989919670 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C508E2B17AC31214A3DB5CA5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +83,6 @@
 		14068B421BFB84E8008D1095 = {
 			isa = PBXGroup;
 			children = (
-				143D81951C041BB800AA7978 /* CSIS4550Final-Bridging-Header.h */,
 				14068B4D1BFB84E8008D1095 /* CSIS4550Final */,
 				14068B621BFB84E8008D1095 /* CSIS4550FinalTests */,
 				14068B6D1BFB84E8008D1095 /* CSIS4550FinalUITests */,
@@ -106,6 +105,7 @@
 		14068B4D1BFB84E8008D1095 /* CSIS4550Final */ = {
 			isa = PBXGroup;
 			children = (
+				143D81951C041BB800AA7978 /* CSIS4550Final-Bridging-Header.h */,
 				14068B4E1BFB84E8008D1095 /* AppDelegate.swift */,
 				14068B501BFB84E8008D1095 /* ViewController.swift */,
 				14068B521BFB84E8008D1095 /* Main.storyboard */,
@@ -222,7 +222,6 @@
 				TargetAttributes = {
 					14068B4A1BFB84E8008D1095 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = RHJ224H6Z6;
 					};
 					14068B5E1BFB84E8008D1095 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -481,6 +480,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = CSIS4550Final/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -499,6 +502,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = CSIS4550Final/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
